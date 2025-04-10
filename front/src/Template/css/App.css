@@ -1,0 +1,116 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+.MainTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.MainTable thead th:nth-child(4){
+  border: 0.5px solid transparent;
+  text-align: center;
+}
+
+.MainTable th, .MainTable td {
+  padding: 10px;
+  text-align: left;
+  border: 2.5px solid #ddd;
+}
+
+
+
+.MainTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* gris clair pour les lignes paires */
+}
+
+.MainTable tbody tr:nth-child(odd) {
+  background-color: white; /* blanc pour les lignes impaires */
+}
+
+td div {
+  display: flex;
+  justify-content: center; /* Centre horizontalement les boutons */
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.FooterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1ch;
+  gap: 5px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.SoldeSection, .ChartSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ModelSolde {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(76, 173, 233, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.ModelSolde div {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
